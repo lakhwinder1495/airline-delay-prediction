@@ -39,7 +39,7 @@ public class PredictionsController : ControllerBase
         try
         {
             var response = await _httpClient.PostAsJsonAsync(
-                "http://127.0.0.1:8000/predict",
+                "https://airline-delay-ml-api.onrender.com/predict",
                 pythonRequest);
 
             var responseBody = await response.Content.ReadAsStringAsync();
