@@ -1,0 +1,31 @@
+@"
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Dataset
+*.csv
+
+# Node
+node_modules/
+dist/
+
+# .NET
+bin/
+obj/
+
+# Environment / secrets
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+"@ | Set-Content .gitignore
